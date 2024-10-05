@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SHOPPE </h1>
+    <ul id="myShopee">
+        <li>Mobile</li>
+        <li>Clothes</li>
+        <li>Shoes</li>
+
+    </ul>
+    <button onclick="addNewShoppe('Food')">Add Shoppe</button>
+    <script>
+
+        function addNewShoppe(shopName){
+            //alert("OK"+ shopName );
+        var name = prompt("Enter the name of shopee"); 
+        l.innerHTML=name;
+        console.log(l);
+        // var body=.append(l);
+        var x = document.getElementById("myShopee");
+        console.log(x.childNodes);
+        x.insertBefore(l,x.childNodes[1]);
+
+        }
+      
+        var l = document.createElement("li");
+        
+        console.log(l);
+        var body=document.head.append(l);
+      console.log(body);
+    </script>
+</body>
+</html>
